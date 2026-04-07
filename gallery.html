@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Галерея зображень</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            cursor: pointer;
+            filter: grayscale(100%);
+            opacity: 0.5;
+            transition: all 0.3s ease;
+        }
+        .gallery img.active {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+<h2>Галерея зображень (12 картинок)</h2>
+<div class="gallery">
+    <img src="https://picsum.photos/id/1011/200/200" alt="Image 1">
+    <img src="https://picsum.photos/id/1012/200/200" alt="Image 2">
+    <img src="https://picsum.photos/id/1015/200/200" alt="Image 3">
+    <img src="https://picsum.photos/id/1016/200/200" alt="Image 4">
+    <img src="https://picsum.photos/id/1020/200/200" alt="Image 5">
+    <img src="https://picsum.photos/id/1024/200/200" alt="Image 6">
+    <img src="https://picsum.photos/id/1027/200/200" alt="Image 7">
+    <img src="https://picsum.photos/id/1033/200/200" alt="Image 8">
+    <img src="https://picsum.photos/id/1035/200/200" alt="Image 9">
+    <img src="https://picsum.photos/id/1037/200/200" alt="Image 10">
+    <img src="https://picsum.photos/id/1040/200/200" alt="Image 11">
+    <img src="https://picsum.photos/id/1041/200/200" alt="Image 12">
+</div>
+
+<script src="gallery.js"></script>
+</body>
+</html>
