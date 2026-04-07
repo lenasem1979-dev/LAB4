@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkbox Task</title>
+</head>
+<body>
+
+<h3>Виберіть мови:</h3>
+
+<label>
+    <input type="checkbox" value="Ukraine"> Ukraine
+</label><br>
+
+<label>
+    <input type="checkbox" value="English"> English
+</label><br>
+
+<label>
+    <input type="checkbox" value="Spainsch"> Spainsch
+</label><br><br>
+
+<button onclick="showSelected()">OK</button>
+
+<p id="result"></p>
+
+<script>
+    function showSelected() {
+        let checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+        let values = [];
+
+        checkboxes.forEach(function(cb) {
+            values.push(cb.value);
+        });
+
+        document.getElementById("result").innerText = values.join(", ");
+    }
+</script>
+
+</body>
+</html>
