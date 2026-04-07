@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 6: Форма з активними секціями</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .section {
+            border: 2px solid #ccc;
+            padding: 15px;
+            margin-bottom: 15px;
+            transition: border-color 0.3s, background-color 0.3s;
+        }
+        .section.active {
+            border-color: #007BFF;
+            background-color: #E6F0FF;
+        }
+        input, select, textarea {
+            display: block;
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<h2>Форма з активними секціями</h2>
+
+<div class="section">
+    <label>Ім'я:</label>
+    <input type="text" placeholder="Введіть ім'я">
+</div>
+
+<div class="section">
+    <label>Email:</label>
+    <input type="email" placeholder="Введіть email">
+</div>
+
+<div class="section">
+    <label>Повідомлення:</label>
+    <textarea placeholder="Ваше повідомлення"></textarea>
+</div>
+
+<div class="section">
+    <label>Країна:</label>
+    <select>
+        <option>Україна</option>
+        <option>Польща</option>
+        <option>Німеччина</option>
+    </select>
+</div>
+
+<script src="form_focus.js"></script>
+</body>
+</html>
