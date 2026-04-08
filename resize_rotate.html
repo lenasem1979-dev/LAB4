@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 7: Зміна розміру та обертання блоку</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .controls { margin-bottom: 20px; }
+        label { display: block; margin: 10px 0 5px; }
+        .block-container { width: 520px; height: 320px; border: 1px solid #ccc; display: flex; align-items: center; justify-content: center; }
+        .block {
+            width: 200px;
+            height: 150px;
+            background-color: #007BFF;
+            transition: all 0.2s ease;
+        }
+    </style>
+</head>
+<body>
+<h2>Завдання 7: Зміна розміру та обертання блоку</h2>
+
+<div class="controls">
+    <label>Ширина: <span id="widthValue">200</span>px</label>
+    <input type="range" id="widthRange" min="0" max="500" value="200">
+
+    <label>Висота: <span id="heightValue">150</span>px</label>
+    <input type="range" id="heightRange" min="0" max="500" value="150">
+
+    <label>Обертання: <span id="rotateValue">0</span>°</label>
+    <input type="range" id="rotateRange" min="0" max="360" value="0">
+</div>
+
+<div class="block-container">
+    <div class="block" id="block"></div>
+</div>
+
+<script src="resize_rotate.js"></script>
+</body>
+</html>
