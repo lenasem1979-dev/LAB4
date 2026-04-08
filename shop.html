@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 9: Кошик</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        .product { margin: 10px 0; }
+        table { margin-top: 20px; border-collapse: collapse; }
+        td, th { border: 1px solid #ccc; padding: 5px 10px; }
+    </style>
+</head>
+<body>
+
+<h2>Список товарів</h2>
+
+<div class="product">Брюки <button onclick="addToCart('Брюки')">Замовити</button></div>
+<div class="product">Сорочка <button onclick="addToCart('Сорочка')">Замовити</button></div>
+<div class="product">Шорти <button onclick="addToCart('Шорти')">Замовити</button></div>
+<div class="product">Туфлі <button onclick="addToCart('Туфлі')">Замовити</button></div>
+
+<h2>Кошик</h2>
+
+<table>
+    <thead>
+    <tr>
+        <th>Товар</th>
+        <th>Кількість</th>
+    </tr>
+    </thead>
+    <tbody id="cart"></tbody>
+</table>
+
+<script src="shop.js"></script>
+
+</body>
+</html>
